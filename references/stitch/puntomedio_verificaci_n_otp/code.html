@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="es" class="h-full"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PuntoMedio — Verificación OTP</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#252238',
+        'on-primary': '#FFFFFF',
+        'accent': '#9787D9',
+        'on-accent': '#252238',
+        'outline': '#E7E4EF',
+        'outline-strong': '#CEC9DB',
+        'success': '#278568',
+        'on-success': '#FFFFFF',
+        'warning': '#B77927',
+        'on-warning': '#1F1F1F',
+        'error': '#C44755',
+        'on-error': '#FFFFFF',
+        'light-surface': '#FFFFFF',
+        'light-on-surface': '#252238',
+        'light-surface-secondary': '#F7F6FA',
+        'light-surface-muted': '#EEEBF5',
+        'light-on-surface-variant': '#858196',
+        'dark-surface': '#252238',
+        'dark-on-surface': '#FFFFFF',
+        'dark-surface-secondary': '#15131F',
+        'dark-surface-muted': '#312D4A',
+        'dark-on-surface-variant': '#B5B0C4',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'md': '10px',
+        'lg': '12px',
+        'xl': '16px',
+        'full': '9999px',
+      },
+      spacing: {
+        'spacing-2xs': '4px',
+        'spacing-xs': '8px',
+        'spacing-sm': '12px',
+        'spacing-md': '16px',
+        'spacing-lg': '20px',
+        'spacing-xl': '24px',
+        'spacing-2xl': '32px',
+      },
+      fontFamily: {
+        'display': ['"Inter"', 'sans-serif'],
+        'headline': ['"Inter"', 'sans-serif'],
+        'title': ['"Inter"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"Inter"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['30px', { lineHeight: '38px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'display-lg-mobile': ['26px', { lineHeight: '34px', letterSpacing: '-0.3px', fontWeight: '700' }],
+        'headline-lg': ['22px', { lineHeight: '28px', letterSpacing: '-0.2px', fontWeight: '600' }],
+        'headline-md': ['18px', { lineHeight: '24px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-lg': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'press': '120ms',
+        'sheet': '200ms',
+      },
+      transitionDelay: {
+        'press': '0ms',
+        'sheet': '0ms',
+      },
+      transitionTimingFunction: {
+        'press': 'cubic-bezier(0.2, 0, 0, 1)',
+        'sheet': 'cubic-bezier(0, 0, 0.2, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-light-surface-secondary text-primary font-body min-h-[884px] antialiased flex flex-col justify-between selection:bg-accent/20" data-stitch-vh="min-h-[884px]===min-h-screen">
+
+  <!-- Mobile View Container -->
+  <div class="flex-1 flex flex-col max-w-[430px] mx-auto w-full px-6 py-6 justify-between">
+
+    <!-- Top Navigation Header -->
+    <header class="flex items-center justify-between pb-4">
+      <button type="button" aria-label="Volver" class="w-10 h-10 rounded-lg border border-outline bg-light-surface text-primary flex items-center justify-center hover:bg-light-surface-secondary transition-colors">
+        <span class="material-symbols-outlined text-[20px]">arrow_back</span>
+      </button>
+      <span class="text-label-sm font-semibold text-light-on-surface-variant">PASO 2 DE 3</span>
+      <div class="w-10"></div>
+    </header>
+
+    <!-- Main Content: OTP input -->
+    <main class="flex-1 py-6 space-y-6">
+      <div>
+        <div class="w-12 h-12 rounded-xl bg-light-surface border border-outline flex items-center justify-center text-primary mb-4">
+          <span class="material-symbols-outlined text-[24px]">phonelink_lock</span>
+        </div>
+        <h1 class="font-headline text-display-lg-mobile font-bold text-primary tracking-tight">
+          Verifica tu teléfono
+        </h1>
+        <p class="text-body-sm text-light-on-surface-variant mt-2 leading-relaxed">
+          Hemos enviado un código SMS de 6 dígitos al número:
+        </p>
+        <p class="text-body-md font-semibold text-primary mt-1 flex items-center gap-2">
+          +52 55 1234 5678
+          <button type="button" class="text-label-sm text-accent hover:underline font-medium">Cambiar</button>
+        </p>
+      </div>
+
+      <!-- 6-digit OTP Box Inputs -->
+      <section class="space-y-3">
+        <label class="block text-primary font-label text-label-md">
+          Código de seguridad
+        </label>
+        <div class="grid grid-cols-6 gap-2" aria-label="Ingresa los 6 dígitos">
+          <input type="text" maxlength="1" value="7" class="w-full aspect-square text-center font-headline text-headline-lg font-bold bg-light-surface border border-primary text-primary rounded-lg focus:outline-none">
+          <input type="text" maxlength="1" value="4" class="w-full aspect-square text-center font-headline text-headline-lg font-bold bg-light-surface border border-primary text-primary rounded-lg focus:outline-none">
+          <input type="text" maxlength="1" value="9" class="w-full aspect-square text-center font-headline text-headline-lg font-bold bg-light-surface border border-primary text-primary rounded-lg focus:outline-none">
+          <input type="text" maxlength="1" value="2" class="w-full aspect-square text-center font-headline text-headline-lg font-bold bg-light-surface border border-primary text-primary rounded-lg focus:outline-none">
+          <input type="text" maxlength="1" placeholder="•" class="w-full aspect-square text-center font-headline text-headline-lg font-bold bg-light-surface border border-outline text-primary rounded-lg focus:border-primary focus:outline-none">
+          <input type="text" maxlength="1" placeholder="•" class="w-full aspect-square text-center font-headline text-headline-lg font-bold bg-light-surface border border-outline text-primary rounded-lg focus:border-primary focus:outline-none">
+        </div>
+
+        <div class="flex items-center justify-between pt-2">
+          <span class="text-body-sm text-light-on-surface-variant flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[16px]">schedule</span>
+            Reenviar código en <strong class="text-primary tabular-nums">00:42</strong>
+          </span>
+          <button type="button" class="text-label-sm text-light-on-surface-variant font-medium hover:text-primary">
+            Reenviar ahora
+          </button>
+        </div>
+      </section>
+
+      <!-- Trust info -->
+      <div class="bg-light-surface border border-outline rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="w-2 h-2 rounded-full bg-success"></span>
+          <span class="text-label-sm font-semibold text-primary">Validación obligatoria</span>
+        </div>
+        <p class="text-body-sm text-light-on-surface-variant">
+          PuntoMedio requiere teléfonos reales para evitar fraudes en la entrega de paquetes y citas presenciales.
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer Action -->
+    <footer class="pt-4">
+      <button type="button" class="w-full bg-primary hover:bg-[#34304e] text-on-primary py-3.5 rounded-lg font-label text-label-lg transition-colors duration-press flex items-center justify-center gap-2">
+        <span>Verificar y continuar</span>
+        <span class="material-symbols-outlined text-[18px]">check</span>
+      </button>
+    </footer>
+
+  </div>
+
+
+
+</body></html>

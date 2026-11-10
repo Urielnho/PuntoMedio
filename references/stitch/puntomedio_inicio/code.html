@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="es" class="h-full"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PuntoMedio — Inicio</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#252238',
+        'on-primary': '#FFFFFF',
+        'accent': '#9787D9',
+        'on-accent': '#252238',
+        'outline': '#E7E4EF',
+        'outline-strong': '#CEC9DB',
+        'success': '#278568',
+        'on-success': '#FFFFFF',
+        'warning': '#B77927',
+        'on-warning': '#1F1F1F',
+        'error': '#C44755',
+        'on-error': '#FFFFFF',
+        'light-surface': '#FFFFFF',
+        'light-on-surface': '#252238',
+        'light-surface-secondary': '#F7F6FA',
+        'light-surface-muted': '#EEEBF5',
+        'light-on-surface-variant': '#858196',
+        'dark-surface': '#252238',
+        'dark-on-surface': '#FFFFFF',
+        'dark-surface-secondary': '#15131F',
+        'dark-surface-muted': '#312D4A',
+        'dark-on-surface-variant': '#B5B0C4',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'md': '10px',
+        'lg': '12px',
+        'xl': '16px',
+        'full': '9999px',
+      },
+      spacing: {
+        'spacing-2xs': '4px',
+        'spacing-xs': '8px',
+        'spacing-sm': '12px',
+        'spacing-md': '16px',
+        'spacing-lg': '20px',
+        'spacing-xl': '24px',
+        'spacing-2xl': '32px',
+      },
+      fontFamily: {
+        'display': ['"Inter"', 'sans-serif'],
+        'headline': ['"Inter"', 'sans-serif'],
+        'title': ['"Inter"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"Inter"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['30px', { lineHeight: '38px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'display-lg-mobile': ['26px', { lineHeight: '34px', letterSpacing: '-0.3px', fontWeight: '700' }],
+        'headline-lg': ['22px', { lineHeight: '28px', letterSpacing: '-0.2px', fontWeight: '600' }],
+        'headline-md': ['18px', { lineHeight: '24px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-lg': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'press': '120ms',
+        'sheet': '200ms',
+      },
+      transitionDelay: {
+        'press': '0ms',
+        'sheet': '0ms',
+      },
+      transitionTimingFunction: {
+        'press': 'cubic-bezier(0.2, 0, 0, 1)',
+        'sheet': 'cubic-bezier(0, 0, 0.2, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-light-surface-secondary text-primary font-body min-h-[884px] antialiased flex flex-col justify-between selection:bg-accent/20" data-stitch-vh="min-h-[884px]===min-h-screen">
+
+  <!-- Mobile View Container -->
+  <div class="flex-1 flex flex-col max-w-[430px] mx-auto w-full pb-20">
+
+    <!-- App Header (Minimal, Solid White, Midnight Violet branding) -->
+    <header class="sticky top-0 z-30 bg-light-surface border-b border-outline px-5 py-3.5 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <!-- Logo icon in Midnight Violet -->
+        <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary font-headline font-bold text-headline-md tracking-tighter">
+          PM
+        </div>
+        <div>
+          <span class="font-headline text-title-lg font-bold tracking-tight text-primary block leading-tight">PuntoMedio</span>
+          <span class="text-label-sm text-light-on-surface-variant font-medium">Ciudad de México</span>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-2.5">
+        <!-- Notification button -->
+        <button type="button" aria-label="Notificaciones" class="relative w-9 h-9 rounded-full border border-outline bg-light-surface hover:bg-light-surface-secondary text-primary flex items-center justify-center transition-colors">
+          <span class="material-symbols-outlined text-[20px]">notifications</span>
+          <span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-accent"></span>
+        </button>
+
+        <!-- User avatar / profile button -->
+        <div class="w-9 h-9 rounded-full bg-light-surface border border-outline text-primary font-semibold text-label-md flex items-center justify-center">
+          CP
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 px-5 pt-5 space-y-6">
+
+      <!-- Header Greeting & Status -->
+      <section>
+        <span class="text-label-sm font-semibold tracking-wide text-light-on-surface-variant block mb-0.5">HOLA, CARLOS</span>
+        <h1 class="font-headline text-display-lg-mobile font-bold text-primary tracking-tight">
+          ¿Qué coordinamos hoy?
+        </h1>
+        <p class="text-body-sm text-light-on-surface-variant mt-1 leading-relaxed">
+          Encuentros presenciales neutrales o recogidas seguras con repartidores independientes.
+        </p>
+      </section>
+
+      <!-- The Two Main Actions (Voy yo / Van por mí) -->
+      <section class="grid grid-cols-1 gap-3.5" aria-label="Servicios Principales">
+
+        <!-- 1. Voy yo — Encuentro gratuito -->
+        <article role="button" tabindex="0" data-component-id="card-interactive" data-component-type="card" data-component-variant="interactive" class="bg-light-surface border border-outline hover:border-accent rounded-xl p-4.5 transition-colors cursor-pointer text-left">
+          <div class="flex items-start gap-3.5">
+            <div class="w-11 h-11 rounded-lg bg-light-surface-secondary border border-outline text-primary flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[22px]">people</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center justify-between mb-1">
+                <h2 data-design-text-token="headline-md" class="font-headline text-headline-md font-semibold text-primary">
+                  Voy yo
+                </h2>
+                <span class="text-label-sm text-light-on-surface-variant bg-light-surface-secondary border border-outline px-2 py-0.5 rounded font-medium">
+                  Gratuito
+                </span>
+              </div>
+              <p data-design-text-token="body-sm" class="text-body-sm text-light-on-surface-variant line-clamp-2 leading-relaxed">
+                Acuerda un punto público conveniente con otra persona. Calculamos rutas y tiempos equitativos.
+              </p>
+              <div class="mt-3 flex items-center gap-1.5 text-primary font-label text-label-sm">
+                <span>Encontrar punto medio</span>
+                <span class="material-symbols-outlined text-[15px] text-accent">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Van por mí — Encargo de pago -->
+        <article role="button" tabindex="0" data-component-id="card-interactive-2" data-component-type="card" data-component-variant="interactive" class="bg-light-surface border border-outline hover:border-accent rounded-xl p-4.5 transition-colors cursor-pointer text-left">
+          <div class="flex items-start gap-3.5">
+            <div class="w-11 h-11 rounded-lg bg-light-surface-secondary border border-outline text-primary flex items-center justify-center shrink-0">
+              <span class="material-symbols-outlined text-[22px]">local_shipping</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-center justify-between mb-1">
+                <h2 data-design-text-token="headline-md" class="font-headline text-headline-md font-semibold text-primary">
+                  Van por mí
+                </h2>
+                <span class="text-label-sm text-primary bg-light-surface-secondary border border-outline px-2 py-0.5 rounded font-semibold">
+                  Encargo
+                </span>
+              </div>
+              <p data-design-text-token="body-sm" class="text-body-sm text-light-on-surface-variant line-clamp-2 leading-relaxed">
+                Solicita una recogida de paquete o compra. Compara postulaciones de repartidores y confirma con OTP.
+              </p>
+              <div class="mt-3 flex items-center gap-1.5 text-primary font-label text-label-sm">
+                <span>Solicitar encargo</span>
+                <span class="material-symbols-outlined text-[15px] text-accent">arrow_forward</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Active Ongoing Activity (Encargo en proceso) -->
+      <section aria-labelledby="active-activity-title">
+        <div class="flex items-center justify-between mb-2.5">
+          <h2 id="active-activity-title" class="font-headline text-headline-md font-semibold text-primary flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-accent"></span>
+            Actividad en curso
+          </h2>
+          <span class="text-label-sm text-light-on-surface-variant font-medium">1 servicio activo</span>
+        </div>
+
+        <article class="bg-light-surface border border-outline rounded-xl p-4">
+          <div class="flex items-start justify-between gap-3 pb-3 border-b border-outline">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-light-surface-secondary border border-outline flex items-center justify-center text-primary shrink-0">
+                <span class="material-symbols-outlined text-[20px]">phone_iphone</span>
+              </div>
+              <div>
+                <span class="text-label-sm font-semibold text-accent block">Van por mí • En trayecto</span>
+                <h3 class="font-title text-title-lg font-semibold text-primary">iPhone 14 Pro 128GB</h3>
+              </div>
+            </div>
+            <div class="text-right">
+              <span class="text-label-md font-bold text-primary tabular-nums block">$145.00 MXN</span>
+              <span class="text-label-sm text-success font-medium flex items-center justify-end gap-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-success"></span> Custodia activa
+              </span>
+            </div>
+          </div>
+
+          <div class="pt-3 space-y-2.5">
+            <div class="flex items-center justify-between text-body-sm text-light-on-surface-variant">
+              <span class="flex items-center gap-1.5 text-primary font-medium">
+                <span class="material-symbols-outlined text-[17px] text-light-on-surface-variant">sports_motorsports</span>
+                Marco Mendoza (★ 4.9)
+              </span>
+              <span class="text-label-sm font-semibold text-primary tabular-nums">Llegada ~18 min</span>
+            </div>
+
+            <!-- OTP Verification Code Badge -->
+            <div class="bg-light-surface-secondary border border-outline rounded-lg p-2.5 flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[18px] text-light-on-surface-variant">lock_outline</span>
+                <span class="text-body-sm text-light-on-surface-variant">Código OTP de entrega:</span>
+              </div>
+              <span class="font-headline text-title-lg font-bold tracking-wider text-primary bg-light-surface px-2.5 py-0.5 rounded border border-outline tabular-nums">
+                5824
+              </span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Trust Pillars / Seguridad PuntoMedio -->
+      <section class="bg-light-surface border border-outline rounded-xl p-4">
+        <h3 class="font-label text-label-md font-semibold text-primary mb-2.5 flex items-center gap-1.5">
+          <span class="material-symbols-outlined text-[18px] text-accent">verified_user</span>
+          Compromiso de seguridad
+        </h3>
+        <div class="grid grid-cols-2 gap-3 text-body-sm text-light-on-surface-variant">
+          <div class="flex items-start gap-1.5">
+            <span class="material-symbols-outlined text-[16px] text-success mt-0.5 shrink-0">check</span>
+            <span>Puntos públicos monitoreados</span>
+          </div>
+          <div class="flex items-start gap-1.5">
+            <span class="material-symbols-outlined text-[16px] text-success mt-0.5 shrink-0">check</span>
+            <span>Identidad oficial verificada</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Navigation Bar (5 Sections per requirements) -->
+    <nav class="fixed bottom-0 inset-x-0 bg-light-surface border-t border-outline max-w-[430px] mx-auto z-40 px-2 py-1.5 flex items-center justify-around" aria-label="Navegación principal">
+
+      <!-- 1. Inicio (Active in Midnight Violet) -->
+      <button type="button" class="flex flex-col items-center justify-center py-1 px-3 text-primary transition-colors" aria-current="page">
+        <span class="material-symbols-outlined text-[24px]">home</span>
+        <span data-design-text-token="label-sm" class="font-label text-label-sm mt-0.5 font-semibold">Inicio</span>
+      </button>
+
+      <!-- 2. Explorar -->
+      <button type="button" class="flex flex-col items-center justify-center py-1 px-3 text-light-on-surface-variant hover:text-primary transition-colors">
+        <span class="material-symbols-outlined text-[24px]">explore</span>
+        <span data-design-text-token="label-sm" class="font-label text-label-sm mt-0.5">Explorar</span>
+      </button>
+
+      <!-- 3. Actividad -->
+      <button type="button" class="flex flex-col items-center justify-center py-1 px-3 text-light-on-surface-variant hover:text-primary transition-colors relative">
+        <span class="material-symbols-outlined text-[24px]">receipt_long</span>
+        <span class="absolute top-1 right-3 w-1.5 h-1.5 rounded-full bg-accent"></span>
+        <span data-design-text-token="label-sm" class="font-label text-label-sm mt-0.5">Actividad</span>
+      </button>
+
+      <!-- 4. Mensajes -->
+      <button type="button" class="flex flex-col items-center justify-center py-1 px-3 text-light-on-surface-variant hover:text-primary transition-colors">
+        <span class="material-symbols-outlined text-[24px]">chat_bubble_outline</span>
+        <span data-design-text-token="label-sm" class="font-label text-label-sm mt-0.5">Mensajes</span>
+      </button>
+
+      <!-- 5. Perfil -->
+      <button type="button" class="flex flex-col items-center justify-center py-1 px-3 text-light-on-surface-variant hover:text-primary transition-colors">
+        <span class="material-symbols-outlined text-[24px]">person_outline</span>
+        <span data-design-text-token="label-sm" class="font-label text-label-sm mt-0.5">Perfil</span>
+      </button>
+
+    </nav>
+
+  </div>
+
+
+
+</body></html>

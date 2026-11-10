@@ -1,0 +1,189 @@
+<!DOCTYPE html><html lang="es" class="h-full"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PuntoMedio — Registro</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#252238',
+        'on-primary': '#FFFFFF',
+        'accent': '#9787D9',
+        'on-accent': '#252238',
+        'outline': '#E7E4EF',
+        'outline-strong': '#CEC9DB',
+        'success': '#278568',
+        'on-success': '#FFFFFF',
+        'warning': '#B77927',
+        'on-warning': '#1F1F1F',
+        'error': '#C44755',
+        'on-error': '#FFFFFF',
+        'light-surface': '#FFFFFF',
+        'light-on-surface': '#252238',
+        'light-surface-secondary': '#F7F6FA',
+        'light-surface-muted': '#EEEBF5',
+        'light-on-surface-variant': '#858196',
+        'dark-surface': '#252238',
+        'dark-on-surface': '#FFFFFF',
+        'dark-surface-secondary': '#15131F',
+        'dark-surface-muted': '#312D4A',
+        'dark-on-surface-variant': '#B5B0C4',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'md': '10px',
+        'lg': '12px',
+        'xl': '16px',
+        'full': '9999px',
+      },
+      spacing: {
+        'spacing-2xs': '4px',
+        'spacing-xs': '8px',
+        'spacing-sm': '12px',
+        'spacing-md': '16px',
+        'spacing-lg': '20px',
+        'spacing-xl': '24px',
+        'spacing-2xl': '32px',
+      },
+      fontFamily: {
+        'display': ['"Inter"', 'sans-serif'],
+        'headline': ['"Inter"', 'sans-serif'],
+        'title': ['"Inter"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"Inter"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['30px', { lineHeight: '38px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'display-lg-mobile': ['26px', { lineHeight: '34px', letterSpacing: '-0.3px', fontWeight: '700' }],
+        'headline-lg': ['22px', { lineHeight: '28px', letterSpacing: '-0.2px', fontWeight: '600' }],
+        'headline-md': ['18px', { lineHeight: '24px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-lg': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'press': '120ms',
+        'sheet': '200ms',
+      },
+      transitionDelay: {
+        'press': '0ms',
+        'sheet': '0ms',
+      },
+      transitionTimingFunction: {
+        'press': 'cubic-bezier(0.2, 0, 0, 1)',
+        'sheet': 'cubic-bezier(0, 0, 0.2, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-light-surface-secondary text-primary font-body min-h-[884px] antialiased flex flex-col justify-between selection:bg-accent/20" data-stitch-vh="min-h-[884px]===min-h-screen">
+
+  <!-- Mobile View Container -->
+  <div class="flex-1 flex flex-col max-w-[430px] mx-auto w-full px-6 py-6 justify-between">
+
+    <!-- Top Navigation Header -->
+    <header class="flex items-center justify-between pb-4">
+      <button type="button" aria-label="Volver" class="w-10 h-10 rounded-lg border border-outline bg-light-surface text-primary flex items-center justify-center hover:bg-light-surface-secondary transition-colors">
+        <span class="material-symbols-outlined text-[20px]">arrow_back</span>
+      </button>
+      <span class="text-label-sm font-semibold text-light-on-surface-variant">PASO 1 DE 3</span>
+      <div class="w-10"></div>
+    </header>
+
+    <!-- Main Registration Form -->
+    <main class="flex-1 py-4 space-y-6">
+      <div>
+        <h1 class="font-headline text-display-lg-mobile font-bold text-primary tracking-tight">
+          Crea tu cuenta
+        </h1>
+        <p class="text-body-sm text-light-on-surface-variant mt-1.5 leading-relaxed">
+          Ingresa tus datos reales. Esta información se usará para respaldar la confianza en tus encuentros y encargos.
+        </p>
+      </div>
+
+      <form class="space-y-4">
+        <!-- Full Name -->
+        <label class="block">
+          <span class="text-primary font-label text-label-md block mb-1.5">Nombre y apellidos</span>
+          <div class="relative flex items-center">
+            <span class="material-symbols-outlined absolute left-3.5 text-light-on-surface-variant text-[20px]" aria-hidden="true">person</span>
+            <input type="text" placeholder="Ej. Sofía Ramírez Morales" class="w-full bg-light-surface border border-outline rounded-lg pl-10 pr-4 py-3 text-primary text-body-md focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-colors">
+          </div>
+        </label>
+
+        <!-- Email -->
+        <label class="block">
+          <span class="text-primary font-label text-label-md block mb-1.5">Correo electrónico</span>
+          <div class="relative flex items-center">
+            <span class="material-symbols-outlined absolute left-3.5 text-light-on-surface-variant text-[20px]" aria-hidden="true">mail</span>
+            <input type="email" placeholder="sofia.ramirez@ejemplo.com" class="w-full bg-light-surface border border-outline rounded-lg pl-10 pr-4 py-3 text-primary text-body-md focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-colors">
+          </div>
+        </label>
+
+        <!-- Phone Number -->
+        <label class="block">
+          <span class="text-primary font-label text-label-md block mb-1.5">Número de teléfono móvil</span>
+          <div class="flex gap-2">
+            <span class="bg-light-surface border border-outline rounded-lg px-3 py-3 text-primary font-semibold text-body-md flex items-center">
+              +52
+            </span>
+            <input type="tel" placeholder="55 1234 5678" class="flex-1 bg-light-surface border border-outline rounded-lg px-4 py-3 text-primary text-body-md focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-colors tabular-nums">
+          </div>
+          <span class="text-body-sm text-light-on-surface-variant mt-1.5 block">
+            Te enviaremos un código SMS de 6 dígitos para validar tu línea.
+          </span>
+        </label>
+
+        <!-- Password -->
+        <label class="block">
+          <span class="text-primary font-label text-label-md block mb-1.5">Contraseña segura</span>
+          <div class="relative flex items-center">
+            <span class="material-symbols-outlined absolute left-3.5 text-light-on-surface-variant text-[20px]" aria-hidden="true">lock</span>
+            <input type="password" placeholder="Mínimo 8 caracteres" class="w-full bg-light-surface border border-outline rounded-lg pl-10 pr-10 py-3 text-primary text-body-md focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none transition-colors">
+            <button type="button" aria-label="Mostrar contraseña" class="absolute right-3.5 text-light-on-surface-variant">
+              <span class="material-symbols-outlined text-[18px]">visibility</span>
+            </button>
+          </div>
+        </label>
+      </form>
+
+      <!-- Security guarantee note -->
+      <div class="bg-light-surface border border-outline rounded-xl p-3.5 flex items-start gap-3">
+        <span class="material-symbols-outlined text-[18px] text-accent mt-0.5 shrink-0">verified_user</span>
+        <p class="text-body-sm text-light-on-surface-variant">
+          Tu número y correo nunca serán visibles para otros usuarios en la plataforma.
+        </p>
+      </div>
+    </main>
+
+    <!-- Form Footer Actions -->
+    <footer class="pt-4 space-y-3">
+      <button type="button" class="w-full bg-primary hover:bg-[#34304e] text-on-primary py-3.5 rounded-lg font-label text-label-lg transition-colors duration-press flex items-center justify-center gap-2">
+        <span>Continuar a verificación</span>
+        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </button>
+
+      <p class="text-center text-body-sm text-light-on-surface-variant">
+        ¿Ya tienes cuenta?
+        <a href="#" class="font-semibold text-primary hover:underline ml-1">Inicia sesión</a>
+      </p>
+    </footer>
+
+  </div>
+
+
+
+</body></html>

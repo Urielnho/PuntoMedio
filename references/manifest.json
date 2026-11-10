@@ -1,0 +1,57 @@
+{
+    "reviewedOn":  "2026-11-07",
+    "technicalDocument":  "technical/PuntoMedio_Documento_Tecnico_V1.docx",
+    "stitchSource":  "stitch/",
+    "files":  [
+                  {
+                      "path":  "solicitud-etapas.md",
+                      "bytes":  11969,
+                      "sha256":  "28729af8c3d31b9130af1914254502be67554e9a39d255b61f65dd6e3d2596e8"
+                  },
+                  {
+                      "path":  "stitch/puntomedio_sistema_de_dise_o.md",
+                      "bytes":  6015,
+                      "sha256":  "0d0bde65d88406ada1510b4f1243363a1980c9008ae219701d3858da46714db9"
+                  },
+                  {
+                      "path":  "stitch/puntomedio_bienvenida_e_inicio_de_sesi_n/code.html",
+                      "bytes":  8674,
+                      "sha256":  "786a52485a6c496c16f18a4eddcd270fb96e966832fdd956b685175f1a0014ae"
+                  },
+                  {
+                      "path":  "stitch/puntomedio_editar_perfil_y_configuraci_n/code.html",
+                      "bytes":  12163,
+                      "sha256":  "967f9f4b54583db050b40a16acdcd564da1142eaa798b0d3fe04fe86c15815ab"
+                  },
+                  {
+                      "path":  "stitch/puntomedio_foto_de_perfil/code.html",
+                      "bytes":  8317,
+                      "sha256":  "174f9d5122bd14f2ddaf51d0725b3639bbe2b629e2f9e6dbceb76031d62fb767"
+                  },
+                  {
+                      "path":  "stitch/puntomedio_inicio/code.html",
+                      "bytes":  16016,
+                      "sha256":  "080b362d97d3e55da084bc9d0291a124f7be60f49f00a654bf0eb22a49eed0ea"
+                  },
+                  {
+                      "path":  "stitch/puntomedio_perfil_p_blico/code.html",
+                      "bytes":  12437,
+                      "sha256":  "bd9eb410425d4a972d02d5bedbe69458c691b2872d977f9be465d6d11f6e0174"
+                  },
+                  {
+                      "path":  "stitch/puntomedio_registro/code.html",
+                      "bytes":  9248,
+                      "sha256":  "737621617cf884259cb074faeb2da52224759555497067670f354de1104e6c7f"
+                  },
+                  {
+                      "path":  "stitch/puntomedio_verificaci_n_otp/code.html",
+                      "bytes":  8628,
+                      "sha256":  "d78a914010579b0777d77a66f8c4d1e96d79ed3dcec6490826e7e9db8e250f77"
+                  },
+                  {
+                      "path":  "technical/PuntoMedio_Documento_Tecnico_V1.docx",
+                      "bytes":  44064,
+                      "sha256":  "247fd71e108a7ff338152f78a6dd968bba6e1514601ec0b7509996a035e3e31c"
+                  }
+              ]
+}

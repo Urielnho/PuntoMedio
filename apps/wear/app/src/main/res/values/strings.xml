@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PuntoMedio</string>
+    <string name="back">Volver</string>
+    <string name="link_title">Vincula tu móvil</string>
+    <string name="link_description">Abre PuntoMedio en tu teléfono para utilizar la misma cuenta y consultar tus servicios.</string>
+    <string name="link_pending">La vinculación todavía no está configurada.</string>
+    <string name="active_services">Servicios activos</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="earnings">Ganancias</string>
+    <string name="account_and_link">Cuenta y vínculo</string>
+    <string name="services_empty_title">Sin actividad</string>
+    <string name="services_empty_description">Tus encuentros y encargos activos aparecerán aquí.</string>
+    <string name="service_information">Información del servicio</string>
+    <string name="notifications_empty_title">Sin notificaciones</string>
+    <string name="notifications_empty_description">Las invitaciones, mensajes y cambios de estado aparecerán aquí cuando se conecte el móvil.</string>
+    <string name="earnings_empty_title">Sin resumen disponible</string>
+    <string name="earnings_empty_description">El resumen se recibirá desde tu cuenta. No se calcula ni se cobra dinero desde el reloj.</string>
+    <string name="service_details">Detalle del servicio</string>
+    <string name="service_missing_title">Ningún servicio seleccionado</string>
+    <string name="service_missing_description">Las confirmaciones requieren un servicio autorizado y validación del servidor.</string>
+    <string name="confirm_arrival">Confirmar llegada</string>
+    <string name="confirm_pickup">Confirmar recogida</string>
+    <string name="confirm_delivery">Confirmar entrega</string>
+    <string name="actions_unavailable">Confirmaciones no disponibles</string>
+    <string name="next_action">Siguiente acción</string>
+    <string name="account_description">Inicia sesión en tu móvil para consultar los servicios de tu cuenta desde el reloj.</string>
+    <string name="brand_mark">PuntoMedio</string>
+</resources>

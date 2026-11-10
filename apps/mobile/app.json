@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "PuntoMedio",
+    "slug": "puntomedio",
+    "version": "0.1.0",
+    "icon": "./assets/puntomedio-icon.png",
+    "scheme": "puntomedio",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "PuntoMedio usa tu ubicación una sola vez para calcular puntos de encuentro y rutas cercanas."
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.puntomedio.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/puntomedio-icon.png",
+        "backgroundColor": "#12052F"
+      },
+      "blockedPermissions": [
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.puntomedio.app",
+      "icon": "./assets/puntomedio-icon.png",
+      "supportsTablet": true
+    }
+  }
+}

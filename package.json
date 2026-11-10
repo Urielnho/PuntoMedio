@@ -1,0 +1,15 @@
+{
+  "name": "puntomedio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PuntoMedio V1 — fundamentos de móvil y Wear OS",
+  "workspaces": ["apps/mobile", "packages/*"],
+  "engines": { "node": "^22.13.0 || ^24.3.0 || >=26.0.0" },
+  "scripts": {
+    "mobile:start": "npm run start --workspace @puntomedio/mobile",
+    "mobile:start:clear": "npm run start --workspace @puntomedio/mobile -- --clear",
+    "mobile:android": "npm run android --workspace @puntomedio/mobile",
+    "mobile:ios": "npm run ios --workspace @puntomedio/mobile",
+    "mobile:typecheck": "npm run typecheck --workspace @puntomedio/mobile"
+  }
+}

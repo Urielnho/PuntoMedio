@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="es" class="h-full"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PuntoMedio — Foto de Perfil</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#252238',
+        'on-primary': '#FFFFFF',
+        'accent': '#9787D9',
+        'on-accent': '#252238',
+        'outline': '#E7E4EF',
+        'outline-strong': '#CEC9DB',
+        'success': '#278568',
+        'on-success': '#FFFFFF',
+        'warning': '#B77927',
+        'on-warning': '#1F1F1F',
+        'error': '#C44755',
+        'on-error': '#FFFFFF',
+        'light-surface': '#FFFFFF',
+        'light-on-surface': '#252238',
+        'light-surface-secondary': '#F7F6FA',
+        'light-surface-muted': '#EEEBF5',
+        'light-on-surface-variant': '#858196',
+        'dark-surface': '#252238',
+        'dark-on-surface': '#FFFFFF',
+        'dark-surface-secondary': '#15131F',
+        'dark-surface-muted': '#312D4A',
+        'dark-on-surface-variant': '#B5B0C4',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'md': '10px',
+        'lg': '12px',
+        'xl': '16px',
+        'full': '9999px',
+      },
+      spacing: {
+        'spacing-2xs': '4px',
+        'spacing-xs': '8px',
+        'spacing-sm': '12px',
+        'spacing-md': '16px',
+        'spacing-lg': '20px',
+        'spacing-xl': '24px',
+        'spacing-2xl': '32px',
+      },
+      fontFamily: {
+        'display': ['"Inter"', 'sans-serif'],
+        'headline': ['"Inter"', 'sans-serif'],
+        'title': ['"Inter"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"Inter"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['30px', { lineHeight: '38px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'display-lg-mobile': ['26px', { lineHeight: '34px', letterSpacing: '-0.3px', fontWeight: '700' }],
+        'headline-lg': ['22px', { lineHeight: '28px', letterSpacing: '-0.2px', fontWeight: '600' }],
+        'headline-md': ['18px', { lineHeight: '24px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-lg': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'press': '120ms',
+        'sheet': '200ms',
+      },
+      transitionDelay: {
+        'press': '0ms',
+        'sheet': '0ms',
+      },
+      transitionTimingFunction: {
+        'press': 'cubic-bezier(0.2, 0, 0, 1)',
+        'sheet': 'cubic-bezier(0, 0, 0.2, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-light-surface-secondary text-primary font-body min-h-[884px] antialiased flex flex-col justify-between selection:bg-accent/20" data-stitch-vh="min-h-[884px]===min-h-screen">
+
+  <!-- Mobile View Container -->
+  <div class="flex-1 flex flex-col max-w-[430px] mx-auto w-full px-6 py-6 justify-between">
+
+    <!-- Top Navigation Header -->
+    <header class="flex items-center justify-between pb-4">
+      <button type="button" aria-label="Volver" class="w-10 h-10 rounded-lg border border-outline bg-light-surface text-primary flex items-center justify-center hover:bg-light-surface-secondary transition-colors">
+        <span class="material-symbols-outlined text-[20px]">arrow_back</span>
+      </button>
+      <span class="text-label-sm font-semibold text-light-on-surface-variant">PASO 3 DE 3</span>
+      <div class="w-10"></div>
+    </header>
+
+    <!-- Main Content: Profile Photo Upload -->
+    <main class="flex-1 py-4 space-y-6 text-center">
+      <div>
+        <h1 class="font-headline text-display-lg-mobile font-bold text-primary tracking-tight">
+          Fotografía de perfil
+        </h1>
+        <p class="text-body-sm text-light-on-surface-variant mt-2 leading-relaxed max-w-xs mx-auto">
+          Requisito obligatorio para todos los usuarios y repartidores. Permite identificarse con seguridad en el punto de encuentro.
+        </p>
+      </div>
+
+      <!-- Avatar Preview Circle & Actions -->
+      <div class="py-4 flex flex-col items-center">
+        <div class="relative">
+          <!-- Circular Frame -->
+          <div class="w-36 h-36 rounded-full bg-light-surface border-2 border-dashed border-primary/40 flex flex-col items-center justify-center text-primary p-2 overflow-hidden shadow-xs">
+            <span class="material-symbols-outlined text-[48px] text-light-on-surface-variant">add_a_photo</span>
+            <span class="text-label-sm text-light-on-surface-variant font-medium mt-1">Tomar foto</span>
+          </div>
+
+          <!-- Edit floating icon -->
+          <button type="button" aria-label="Cargar foto" class="absolute bottom-1 right-1 w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm hover:bg-[#34304e] transition-colors">
+            <span class="material-symbols-outlined text-[20px]">photo_camera</span>
+          </button>
+        </div>
+
+        <div class="flex items-center gap-3 mt-4">
+          <button type="button" class="px-4 py-2 bg-light-surface border border-outline rounded-lg text-primary font-label text-label-md hover:bg-light-surface-secondary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">photo_library</span>
+            Galería
+          </button>
+          <button type="button" class="px-4 py-2 bg-light-surface border border-outline rounded-lg text-primary font-label text-label-md hover:bg-light-surface-secondary transition-colors flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-[18px]">camera_alt</span>
+            Cámara
+          </button>
+        </div>
+      </div>
+
+      <!-- Guidelines list -->
+      <section class="bg-light-surface border border-outline rounded-xl p-4 text-left space-y-2.5">
+        <h2 class="text-label-md font-semibold text-primary">Criterios de validación:</h2>
+        <ul class="space-y-2 text-body-sm text-light-on-surface-variant">
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px] text-success">check_circle</span>
+            <span>Rostro descubierto, de frente y buena iluminación</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px] text-success">check_circle</span>
+            <span>Sin lentes oscuros, gorras o accesorios obstructivos</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px] text-error">cancel</span>
+            <span>No se permiten avatares, ilustraciones o fotos de objetos</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer Actions -->
+    <footer class="pt-4">
+      <button type="button" class="w-full bg-primary hover:bg-[#34304e] text-on-primary py-3.5 rounded-lg font-label text-label-lg transition-colors duration-press flex items-center justify-center gap-2">
+        <span>Guardar y finalizar registro</span>
+        <span class="material-symbols-outlined text-[18px]">check</span>
+      </button>
+    </footer>
+
+  </div>
+
+
+
+</body></html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html><html lang="es" class="h-full"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PuntoMedio — Perfil Público</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#252238',
+        'on-primary': '#FFFFFF',
+        'accent': '#9787D9',
+        'on-accent': '#252238',
+        'outline': '#E7E4EF',
+        'outline-strong': '#CEC9DB',
+        'success': '#278568',
+        'on-success': '#FFFFFF',
+        'warning': '#B77927',
+        'on-warning': '#1F1F1F',
+        'error': '#C44755',
+        'on-error': '#FFFFFF',
+        'light-surface': '#FFFFFF',
+        'light-on-surface': '#252238',
+        'light-surface-secondary': '#F7F6FA',
+        'light-surface-muted': '#EEEBF5',
+        'light-on-surface-variant': '#858196',
+        'dark-surface': '#252238',
+        'dark-on-surface': '#FFFFFF',
+        'dark-surface-secondary': '#15131F',
+        'dark-surface-muted': '#312D4A',
+        'dark-on-surface-variant': '#B5B0C4',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'md': '10px',
+        'lg': '12px',
+        'xl': '16px',
+        'full': '9999px',
+      },
+      spacing: {
+        'spacing-2xs': '4px',
+        'spacing-xs': '8px',
+        'spacing-sm': '12px',
+        'spacing-md': '16px',
+        'spacing-lg': '20px',
+        'spacing-xl': '24px',
+        'spacing-2xl': '32px',
+      },
+      fontFamily: {
+        'display': ['"Inter"', 'sans-serif'],
+        'headline': ['"Inter"', 'sans-serif'],
+        'title': ['"Inter"', 'sans-serif'],
+        'body': ['"Inter"', 'sans-serif'],
+        'label': ['"Inter"', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['30px', { lineHeight: '38px', letterSpacing: '-0.4px', fontWeight: '700' }],
+        'display-lg-mobile': ['26px', { lineHeight: '34px', letterSpacing: '-0.3px', fontWeight: '700' }],
+        'headline-lg': ['22px', { lineHeight: '28px', letterSpacing: '-0.2px', fontWeight: '600' }],
+        'headline-md': ['18px', { lineHeight: '24px', letterSpacing: '-0.1px', fontWeight: '600' }],
+        'title-lg': ['16px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-lg': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '18px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.2px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'press': '120ms',
+        'sheet': '200ms',
+      },
+      transitionDelay: {
+        'press': '0ms',
+        'sheet': '0ms',
+      },
+      transitionTimingFunction: {
+        'press': 'cubic-bezier(0.2, 0, 0, 1)',
+        'sheet': 'cubic-bezier(0, 0, 0.2, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-light-surface-secondary text-primary font-body min-h-[884px] antialiased flex flex-col justify-between selection:bg-accent/20" data-stitch-vh="min-h-[884px]===min-h-screen">
+
+  <!-- Mobile View Container -->
+  <div class="flex-1 flex flex-col max-w-[430px] mx-auto w-full pb-8">
+
+    <!-- Top Contextual Navigation Header -->
+    <header class="sticky top-0 z-30 bg-light-surface border-b border-outline px-5 py-3 flex items-center justify-between">
+      <button type="button" aria-label="Volver" class="w-10 h-10 rounded-lg border border-outline bg-light-surface text-primary flex items-center justify-center hover:bg-light-surface-secondary transition-colors">
+        <span class="material-symbols-outlined text-[20px]">arrow_back</span>
+      </button>
+      <span class="font-title text-title-lg font-semibold text-primary">Perfil de Usuario</span>
+      <button type="button" aria-label="Compartir o reportar" class="w-10 h-10 rounded-lg border border-outline bg-light-surface text-primary flex items-center justify-center hover:bg-light-surface-secondary transition-colors">
+        <span class="material-symbols-outlined text-[20px]">more_vert</span>
+      </button>
+    </header>
+
+    <!-- Main Profile Content -->
+    <main class="flex-1 px-5 pt-5 space-y-5">
+
+      <!-- Identity Card (Verified, Photo, Stats) -->
+      <section class="bg-light-surface border border-outline rounded-xl p-5 text-center">
+        <!-- Photo Container -->
+        <div class="relative inline-block mb-3">
+          <div class="w-24 h-24 rounded-full bg-light-surface-secondary border-2 border-primary/20 flex items-center justify-center text-primary font-bold text-headline-lg overflow-hidden">
+            MM
+          </div>
+          <!-- Verification Badge -->
+          <div class="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-success text-on-success flex items-center justify-center border-2 border-light-surface" title="Identidad Verificada">
+            <span class="material-symbols-outlined text-[16px]">verified</span>
+          </div>
+        </div>
+
+        <h1 class="font-headline text-headline-lg font-bold text-primary">
+          Marco Mendoza
+        </h1>
+        <p class="text-body-sm text-light-on-surface-variant flex items-center justify-center gap-1.5 mt-0.5">
+          <span class="material-symbols-outlined text-[16px] text-accent">two_wheeler</span>
+          Repartidor independiente &amp; Usuario frecuente
+        </p>
+        <p class="text-label-sm text-light-on-surface-variant mt-1">
+          Miembro verificado desde marzo 2024 • CDMX
+        </p>
+
+        <!-- Trust Ratings Counter -->
+        <div class="grid grid-cols-3 gap-2 pt-4 mt-4 border-t border-outline">
+          <div class="text-center">
+            <span class="font-headline text-headline-md font-bold text-primary tabular-nums block">4.9 ★</span>
+            <span class="text-label-sm text-light-on-surface-variant font-medium">Calificación</span>
+          </div>
+          <div class="text-center border-x border-outline">
+            <span class="font-headline text-headline-md font-bold text-primary tabular-nums block">142</span>
+            <span class="text-label-sm text-light-on-surface-variant font-medium">Servicios</span>
+          </div>
+          <div class="text-center">
+            <span class="font-headline text-headline-md font-bold text-primary tabular-nums block">99%</span>
+            <span class="text-label-sm text-light-on-surface-variant font-medium">Puntualidad</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Privacy & Protection Banner -->
+      <section class="bg-light-surface border border-outline rounded-xl p-3.5 flex items-center gap-3">
+        <span class="material-symbols-outlined text-[20px] text-accent shrink-0">shield</span>
+        <p class="text-body-sm text-light-on-surface-variant leading-snug">
+          Por seguridad, los datos de contacto directo (teléfono, domicilio y correo) están protegidos y ocultos.
+        </p>
+      </section>
+
+      <!-- Verifications Checkbox List -->
+      <section class="bg-light-surface border border-outline rounded-xl p-4 space-y-3">
+        <h2 class="font-title text-title-lg font-semibold text-primary">Validaciones oficiales</h2>
+        <div class="space-y-2 text-body-sm">
+          <div class="flex items-center justify-between py-1 border-b border-outline">
+            <span class="flex items-center gap-2 text-primary">
+              <span class="material-symbols-outlined text-[18px] text-success">check_circle</span>
+              Identificación Oficial (INE / Pasaporte)
+            </span>
+            <span class="text-label-sm text-success font-medium">Verificado</span>
+          </div>
+          <div class="flex items-center justify-between py-1 border-b border-outline">
+            <span class="flex items-center gap-2 text-primary">
+              <span class="material-symbols-outlined text-[18px] text-success">check_circle</span>
+              Número de teléfono personal
+            </span>
+            <span class="text-label-sm text-success font-medium">Verificado</span>
+          </div>
+          <div class="flex items-center justify-between py-1">
+            <span class="flex items-center gap-2 text-primary">
+              <span class="material-symbols-outlined text-[18px] text-success">check_circle</span>
+              Fotografía facial biométrica
+            </span>
+            <span class="text-label-sm text-success font-medium">Verificado</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent Reviews & Comments -->
+      <section class="space-y-3">
+        <div class="flex items-center justify-between">
+          <h2 class="font-title text-title-lg font-semibold text-primary">Reseñas recientes (68)</h2>
+          <a href="#" class="text-label-sm text-accent font-semibold hover:underline">Ver todas</a>
+        </div>
+
+        <article class="bg-light-surface border border-outline rounded-xl p-4 space-y-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <div class="w-7 h-7 rounded-full bg-light-surface-secondary border border-outline text-primary text-label-sm font-semibold flex items-center justify-center">
+                LR
+              </div>
+              <span class="font-title text-title-md font-semibold text-primary">Laura R.</span>
+            </div>
+            <span class="text-label-sm text-light-on-surface-variant tabular-nums">Hace 2 días</span>
+          </div>
+          <div class="flex items-center gap-1 text-label-sm font-semibold text-primary">
+            <span>★★★★★</span>
+            <span class="text-light-on-surface-variant font-normal">• Encargo: Entrega de laptop</span>
+          </div>
+          <p class="text-body-sm text-light-on-surface-variant leading-relaxed">
+            &#34;Excelente servicio. Llegó exactamente a la hora acordada a Plaza Universidad, revisó el paquete con cuidado y el código OTP se procesó al instante.&#34;
+          </p>
+        </article>
+
+        <article class="bg-light-surface border border-outline rounded-xl p-4 space-y-2">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <div class="w-7 h-7 rounded-full bg-light-surface-secondary border border-outline text-primary text-label-sm font-semibold flex items-center justify-center">
+                DG
+              </div>
+              <span class="font-title text-title-md font-semibold text-primary">Diego G.</span>
+            </div>
+            <span class="text-label-sm text-light-on-surface-variant tabular-nums">Hace 1 semana</span>
+          </div>
+          <div class="flex items-center gap-1 text-label-sm font-semibold text-primary">
+            <span>★★★★★</span>
+            <span class="text-light-on-surface-variant font-normal">• Encuentro: Cafetería Condesa</span>
+          </div>
+          <p class="text-body-sm text-light-on-surface-variant leading-relaxed">
+            &#34;Muy confiable y puntual para coordinar el intercambio. Todo transparente.&#34;
+          </p>
+        </article>
+      </section>
+
+    </main>
+
+    <!-- Bottom Action Button (Contextual) -->
+    <footer class="px-5 pt-4">
+      <button type="button" class="w-full bg-primary hover:bg-[#34304e] text-on-primary py-3.5 rounded-lg font-label text-label-lg transition-colors duration-press flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        <span>Enviar mensaje directo</span>
+      </button>
+    </footer>
+
+  </div>
+
+
+
+</body></html>
